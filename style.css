@@ -4,53 +4,50 @@ body {
     align-items: center;
     margin: 0;
     background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
-
-
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centra horizontalmente los elementos de la lista */
-    gap: 6rem;
-
+    justify-content: center;
+    gap: 18%;
 }
 
 nav li {
-    margin-right: 20px;
-
+    margin-right: 2em;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 20px;
-
-
+    font-size: 2em;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12rem; /* Espacio entre los círculos */
-    margin-top: 15rem; /* Ajusta este valor según sea necesario */
+    gap: 5%;
+    margin-top: 20em;
+    width: 100%;
 }
 
 .circle {
     text-align: center;
     background-color: transparent;
     border-radius: 50%;
-    width: 18rem;
-    height: 18rem;
+    width: 18em;
+    height: 18em;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: relative;
+    margin-top: 6em;
 }
 
 .circle img {
@@ -61,53 +58,53 @@ nav a {
 }
 
 .circle p {
-    margin-top: 10px;
-    font-size: 14px;
+    margin-top: 1em;
+    font-size: 1.4em;
     font-weight: bold;
 }
 
 .name {
-    margin-top: 1.5rem; /* Ajusta el espacio entre la imagen y el nombre */
-    font-size: 2.6rem; /* Ajusta el tamaño del nombre */
+    margin-top: 1.5em;
+    font-size: 1.6em;
     font-weight: bold;
-    color: #333
+    color: #333;
 }
 
 footer {
     background-color: #333;
     color: #fff;
-    padding: 1rem ; /* Aumenta el espacio de relleno */
+    padding: 1em;
     text-align: center;
-    width: 100%; /* Ocupar todo el ancho de la página */
-    position: fixed; /* Fijar el footer en la parte inferior */
-    bottom: 0; /* Asegurar que el footer esté en la parte inferior */
-    left: 0; /* Asegurar que el footer esté a la izquierda */
-    z-index: 1000; /* Asegurar que el footer esté por encima de otros elementos */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 1em;
 }
 
 .header-title {
-    font-size: 2.6rem;
-    margin-left: 1rem;
+    font-size: 2.6em;
+    margin-left: 1em;
     font-weight: bold;
     color: #fff;
 }
 
 .header-navigation {
     display: flex;
-    gap: 8rem;
+    margin-right: 5%;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 1em 0;
     text-align: center;
     width: 100%;
     position: fixed;
