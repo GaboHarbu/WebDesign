@@ -107,7 +107,7 @@ header {
     padding: 1em 0;
     text-align: center;
     width: 100%;
-    position: fixed;
+    position: relative;
     z-index: 1000;
 }
 @media (max-width: 768px) {
