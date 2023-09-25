@@ -31,15 +31,15 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 5%;
-    margin-top: 20em;
-    width: 100%;
+    margin: 13%;
+    width: 90%;
 }
 
 .circle {
     text-align: center;
     background-color: transparent;
     border-radius: 50%;
-    width: 18em;
+    width: auto;
     height: 18em;
     flex-direction: column;
     align-items: center;
@@ -47,7 +47,7 @@ nav a {
     padding: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: relative;
-    margin-top: 6em;
+    margin: 5%;
 }
 
 .circle img {
@@ -76,10 +76,10 @@ footer {
     padding: 1em;
     text-align: center;
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0;
-    left: 0;
     z-index: 1000;
+    left: 0;
 }
 
 .header-content {
@@ -109,4 +109,51 @@ header {
     width: 100%;
     position: fixed;
     z-index: 1000;
+}
+@media (max-width: 768px) {
+    nav ul {
+        gap: 5%; 
+    }
+
+    nav li {
+        margin-right: 1em; 
+    }
+
+    nav a {
+        font-size: 1.5em; 
+    }
+
+    .container {
+        margin-top: 8em; 
+        gap: 3%; 
+    }
+
+    .circle {
+        height: 15em; 
+        margin-top: 3em; 
+    }
+
+    .circle p {
+        font-size: 1.2em; 
+    }
+
+    .name {
+        font-size: 1.4em; 
+    }
+
+    .header-title {
+        font-size: 2em; 
+    }
+
+    .header-navigation {
+        margin-right: 2%; 
+    }
+
+    header {
+        padding: 0.5em 0; 
+    }
+
+    footer {
+        padding: 0.5em;
+    }
 }
