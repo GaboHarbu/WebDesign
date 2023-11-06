@@ -1,0 +1,27 @@
+.carousel-inner {
+    max-height: 50rem;
+}
+
+#bg-contacto {
+    position: relative;
+    top: -4.33em; /* Ajusta este valor según tus necesidades */
+}
+
+#seccion-contacto {
+    background-image: url('../images/footer.jpg');
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+}
+
+.text-verde {
+    color: #3eb54a;
+}
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+a {
+    text-decoration: none;
+}
