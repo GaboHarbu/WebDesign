@@ -157,3 +157,12 @@ header {
         padding: 0.5em;
     }
 }
+
+.header-title a {
+    text-decoration: none;
+    color: #fff; /* Color blanco */
+}
+
+.header-title a:hover {
+    text-decoration: none;
+}
