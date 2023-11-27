@@ -48,7 +48,7 @@
             </div>
             <small id="progress-text" class="form-text text-muted"></small>
         </div>
-        <form id="carbon-footprint-form">
+        <form id="carbon-footprint-form" style="font-size: 1.3em;">
             <div id="questions-container">
                 <div class="question mb-4">
                     <label for="question1">¿Cuántos kilómetros conduces al día?</label>
@@ -87,15 +87,27 @@
         </form>
     </div>
     
-    <div class="container mt-4">
-        <div class="alert alert-success" role="alert">
-            Tu huella de carbono anual es: <span id="carbonFootprintResult">0.00 kg CO2</span>
+    <div class="container mt-4" id="resultContainer" style="display: none;">
+
+        <div class="alert alert-success" role="alert" style="font-size: 1.7em;">
+            👣 Tu huella de carbono anual es de: <span id="carbonFootprintResult">0.00 kg CO2</span>
         </div>
-        <div class="alert alert-success" role="alert">
-            Esto es equivalente a <span id="treeEquivalent">0</span> árboles necesarios para absorber el CO2 en un año.
+        <br>
+        <div class="alert alert-success" role="alert" style="font-size: 1.4em;">
+            🌳 Se necesitarían <span id="treeEquivalent">0</span> árboles para absorber todo ese CO2 en un año.
+        </div>
+
+        <div class="alert alert-success" role="alert" style="font-size: 1.2em;">
+            🚀 <span id="moonTripsEquivalent">0</span> viajes a la Luna.
+        </div>
+        <div class="alert alert-success" role="alert" style="font-size: 1.2em;">
+            🚘 <span id="carEquivalent">0</span> kilómetros en un automóvil promedio.
+        </div>
+        <div class="alert alert-success" role="alert" style="font-size: 1.2em;">
+            🧃 <span id="plasticBottlesEquivalent">0</span> botellas de plástico no recicladas.
         </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="../cf_calculator/cf_calculator.js"></script>

@@ -76,10 +76,24 @@ $(document).ready(function () {
 
         const resultadoCalculado = respuestas.reduce((acc, respuesta) => acc + respuesta, 0) * 365;
 
-        $('#carbonFootprintResult').text(resultadoCalculado.toFixed(2) + " kg CO2");
+        $('#carbonFootprintResult').text(resultadoCalculado.toFixed(0) + " kg CO2");
 
         const arbolesNecesarios = resultadoCalculado / 22; // Suponiendo que un árbol absorbe aproximadamente 22 kg de CO2 al año
-        $('#treeEquivalent').text(arbolesNecesarios.toFixed(2));
+        $('#treeEquivalent').text(arbolesNecesarios.toFixed(0));
+
+        const viajesALaLunaEquivalentes = resultadoCalculado / 384400 ; // Distancia promedio a la Luna en km
+        const kgCO2PorKilometroCohete = 0.05; // Estimación de emisión de CO2 por kilómetro lanzado por un cohete
+
+        const viajesCoheteEquivalentes = viajesALaLunaEquivalentes * kgCO2PorKilometroCohete;
+        $('#moonTripsEquivalent').text(viajesCoheteEquivalentes.toFixed(2));
+
+        const kilometrosEnAutoEquivalentes = resultadoCalculado / 0.12; // Suponiendo 0.12 kg de CO2 por kilómetro en un automóvil promedio
+        $('#carEquivalent').text(kilometrosEnAutoEquivalentes.toFixed(0));
+
+        const botellasDePlasticoEquivalentes = resultadoCalculado / 0.05; // Suponiendo 0.05 kg de CO2 por botella de plástico no reciclada
+        $('#plasticBottlesEquivalent').text(botellasDePlasticoEquivalentes.toFixed(0));
+
+        $('#resultContainer').show();
     });
 
     function updateProgressBar() {
